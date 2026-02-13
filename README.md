@@ -1,65 +1,226 @@
-# Data-Analyst-Project-2
+Below is a clean, professional project report with structured sections and suggested logo placements.
+(You can copy this into Word / Google Docs and insert the logos where indicated.)
 
-1) Project Summary
+🏦💳 LIVE FINANCIAL FRAUD DETECTION SYSTEM
+Real-Time AI-Powered Fraud Monitoring Dashboard
+🏛️ Institution Logo
 
-This project is a Live Financial Fraud Detection Dashboard that:
+(Insert your College/University Logo here)
 
-trains a fraud classifier using historical transactions (credit_card_fraud_dataset.csv)
+🧠 Technology Logos
 
-generates synthetic live transactions continuously
+(Insert Python, Streamlit, Scikit-learn, and SQLite logos here)
 
-predicts fraud in real-time
+📄 PROJECT REPORT
+1️⃣ Abstract
 
-stores transactions + predictions in SQLite (fraud_detection.db)
+The Live Financial Fraud Detection System is an AI-powered real-time fraud monitoring dashboard developed using Machine Learning and Streamlit.
 
-visualizes trends, alerts, and model insights in a Streamlit dashboard
+The system detects suspicious credit card transactions using a trained Random Forest model and visualizes fraud trends dynamically. It integrates:
 
-2) Key Features
+Machine Learning (Random Forest)
 
-ML Model: RandomForestClassifier
+Data Preprocessing & SMOTE (Handling Imbalanced Data)
 
-Imbalance handling: SMOTE oversampling
+SQLite Database
 
-Preprocessing:
+Real-time Transaction Simulation
 
-One-hot encoding (TransactionType, Location)
+Interactive Streamlit Dashboard
 
-Robust scaling for Amount
+This project demonstrates practical implementation of fraud detection used in banking and financial institutions.
 
-Optional time-based features (day, month, hour)
+2️⃣ Introduction
 
-Live Stream Simulation:
+Financial fraud is a major challenge in digital banking systems. With the rapid increase in online transactions, detecting fraudulent activities in real time is critical.
 
-generates a new transaction periodically
+This project simulates a live transaction system where:
 
-predicts fraud probability/class
+New transactions are generated continuously.
 
-appends record to SQLite
+A trained ML model predicts fraud instantly.
 
-Dashboard Pages:
+Results are stored in a database.
 
-Overview (metrics + charts)
+A live dashboard displays fraud analytics.
 
-Fraud Monitor (alerts)
+3️⃣ Objectives
 
-Amount / Time / Location / Merchant analysis
+The main objectives of this project are:
 
-Model feature importance
+Develop a fraud detection ML model.
 
-Live transactions feed
+Handle class imbalance using SMOTE.
 
-3) Tech Stack
+Create a real-time data streaming simulation.
 
-Python
+Build an interactive dashboard.
 
-Streamlit (UI)
+Store predictions in a database.
 
-Pandas / NumPy (data)
+Visualize fraud risk patterns.
 
-Scikit-learn (ML)
+4️⃣ System Architecture
+🔷 High-Level Architecture
 
-Imbalanced-learn (SMOTE)
+User → Live Transaction Generator → ML Model → SQLite Database → Streamlit Dashboard
 
-SQLite (storage)
+🔷 Components
 
-Seaborn / Matplotlib (plots)
+Data Preprocessing Module
+
+Date conversion
+
+Feature engineering
+
+One-hot encoding
+
+Robust scaling
+
+Machine Learning Module
+
+Random Forest Classifier
+
+SMOTE for class balancing
+
+ROC-AUC evaluation
+
+Database Layer
+
+SQLite
+
+Stores transactions and predictions
+
+Visualization Layer
+
+Streamlit
+
+Matplotlib
+
+Seaborn
+
+5️⃣ Technologies Used
+Technology	Purpose
+🐍 Python	Core programming
+📊 Pandas & NumPy	Data handling
+🤖 Scikit-learn	Machine Learning
+⚖ SMOTE (Imbalanced-learn)	Handling imbalanced dataset
+🗄 SQLite	Database storage
+📈 Matplotlib & Seaborn	Visualization
+🌐 Streamlit	Interactive dashboard
+6️⃣ Dataset Description
+
+The dataset contains historical credit card transactions with the following features:
+
+TransactionID
+
+TransactionDate
+
+Amount
+
+MerchantID
+
+TransactionType
+
+Location
+
+IsFraud (Target variable)
+
+Fraud cases are highly imbalanced (~3%), making SMOTE necessary.
+
+7️⃣ Machine Learning Process
+Step 1: Data Cleaning
+
+Convert date columns
+
+Remove irrelevant features
+
+Step 2: Feature Engineering
+
+Extract day and month
+
+One-hot encoding for categorical features
+
+Robust scaling for amount normalization
+
+Step 3: Handling Imbalance
+
+SMOTE was applied to oversample fraud cases.
+
+Step 4: Model Training
+
+Random Forest Classifier:
+
+150 trees
+
+Parallel processing enabled
+
+Random state = 42
+
+Step 5: Evaluation
+
+Classification Report
+
+ROC-AUC Score
+
+8️⃣ Live Simulation
+
+The system generates synthetic live transactions using:
+
+generate_live_transaction()
+
+
+Each new transaction:
+
+Is processed
+
+Predicted by the ML model
+
+Stored in SQLite
+
+Displayed on dashboard
+
+9️⃣ Dashboard Pages
+📊 Overview
+
+Total transactions
+
+Fraud detected
+
+Fraud rate
+
+Real-time charts
+
+🚨 Fraud Monitor
+
+Fraud alerts
+
+Fraud distribution
+
+💰 Amount Analysis
+
+Amount trends
+
+Fraud vs Non-fraud comparison
+
+⏰ Time Analysis
+
+Fraud per hour
+
+📍 Location Analysis
+
+High-risk locations
+
+🏪 Merchant Analysis
+
+Merchant risk insights
+
+📈 Model Insights
+
+Feature importance
+
+Training sample count
+
+🔴 Live Feed
+
+Latest transactions
