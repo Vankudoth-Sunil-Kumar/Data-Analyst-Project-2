@@ -1,11 +1,5 @@
 # Data-Analyst-Project-2
-You pasted two full programs merged into one file, and the first one has an infinite rerun loop (time.sleep(2) + st.experimental_rerun()) that will restart the script before the sidebar/pages even render.
 
-Also, your earlier error was No module named 'streamlit', so first you must install Streamlit and run it the Streamlit way.
-
-Below is a clean “README report” + the exact run steps + the main fixes you must apply.
-
-README / Report — Live Financial Fraud Detection Dashboard (Streamlit)
 1) Project Summary
 
 This project is a Live Financial Fraud Detection Dashboard that:
