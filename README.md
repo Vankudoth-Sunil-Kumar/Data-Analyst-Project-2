@@ -1,6 +1,3 @@
-Below is a clean, professional project report with structured sections and suggested logo placements.
-(You can copy this into Word / Google Docs and insert the logos where indicated.)
-
 🏦💳 LIVE FINANCIAL FRAUD DETECTION SYSTEM
 Real-Time AI-Powered Fraud Monitoring Dashboard
 🏛️ Institution Logo
